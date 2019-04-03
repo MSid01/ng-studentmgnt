@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>StudentManagement</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>	
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="studentcontroller.js"></script>
+	<script type="text/javascript" src="studentservice.js"></script>
+	<script type="text/javascript" src="studentdirective.js"></script>
+</head>
+<body ng-app = "studentApp">
+	<div class="container">
+		<h2 align="center"><b>Student Management System</b></h2>
+		<div ng-controller = "StudentController as sc">
+			<h2 align="center"><b>Search Students</b></h2>
+			<div student-search></div>
+			<h3 align="center"><b>Student Details</b></h3>
+			<div student-display></div>
+		</div>
+	</div>
+</body>
+</html>
